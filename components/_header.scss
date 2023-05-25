@@ -1,0 +1,40 @@
+.header_colored {
+    background: $background-color1;
+}
+
+.wrapper {
+    @extend %wrapper;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    @include font (25px, 25px, 700);
+    color: $color-nav-text;
+    &::after {
+        content: "*";
+        color: $background-color2;
+    }
+}
+
+.nav {
+    display: flex;
+    &__item {
+        list-style-type: none;
+        padding-left: 15px;
+    }
+    &__link {
+        @include font (14px, 12px, 700);
+        color: $color-nav-text;
+        text-decoration: none;
+        &:hover {
+            color: $background-color2;
+            transition: .4s;
+        }
+    }
+    
+}
