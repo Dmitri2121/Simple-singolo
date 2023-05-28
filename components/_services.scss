@@ -1,0 +1,52 @@
+.services {
+    background: $background-phone;
+}
+
+.services__title {
+    @include font (36px, 30px, 900);
+    padding: 65px 0 18px;
+    margin: 0;
+    color: $color-title;
+}
+
+.services__text {
+    @include font (30px, 18px, 300);
+    color: $color-text;
+    width: 920px;
+    margin: 0;
+    padding-bottom: 60px;
+}
+
+.items-content__title {
+    @include font (20px, 18px, 900);
+    color: $color-title;
+}
+
+.items-content__text {
+    @include font (22px, 12px, 400);
+    color: $color-text;
+}
+
+.items-content__block {
+    width: 300px;
+    display: inline-block;
+    margin-bottom: 20px;
+    &:nth-child(3n-1) {
+        margin: 0 10px 0 10px;
+    }
+    &:last-child {
+        margin-bottom: 46px;
+    }
+}
+
+.items-content__img {
+    float: left;
+}
+
+.items-content__info {
+    margin-left: 80px;
+}
+
+.items-content__title {
+    margin-top: 0;
+}

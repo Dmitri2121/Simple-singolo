@@ -1,5 +1,18 @@
 .slider {
     background: $background-color2;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__arrow:last-child {
+        margin-left: 100px;
+    }
+    &__vertical-img {
+        margin-right: 152px;
+        margin-top: 60px;
+        margin-bottom: 82px;
+    }
 }
 
 .vertical-img {
@@ -11,14 +24,14 @@
     width: 216px;
     height: 458px;
     border-radius: 22px;
-    &__image_transform {
+    &_transform {
         transform: rotate(90deg);
-    
     }
   
     &_shadowed {
         box-shadow:  25px 25px  rgba(0, 0, 0, .1), 25px 25px rgba(0, 0, 0, .1);
     }
+    
     &__vector {
         width: 8.88px;
         height: 8.88px;
@@ -35,37 +48,10 @@
         width: 41.88px;
         height: 41.88px;
     }
-   
 }
 
-// .horizontal-img {
-//     display: flex;
-//     justify-content: space-around;
-//     align-items: center;
-//     background: $background-phone;
-//     width: 458px;
-//     height: 216px;
-//     border-radius: 22px;
-//     &_shadowed {
-//         box-shadow:  25px 25px  rgba(0, 0, 0, .1), 25px 25px rgba(0, 0, 0, .1);
-//     }
-//     &__vector {
-//         width: 8.88px;
-//         height: 8.88px;
-//     }
-//     &__speaker {
-//         width: 36px;
-//         height: 5px;
-//         transform: rotate(90deg);
-//     }
-//     &__image {
-//         border-radius: 5px;
-//         border: 2px solid $border-phone;
-//         width: 333px;
-//         height: 188px;
-//     }
-//     &__group {
-//         width: 41.88px;
-//         height: 41.88px;
-//     }
-// }
+.horizontal-img_shadowed {
+    box-shadow:  25px 25px  rgba(0, 0, 0, .1), 25px 25px rgba(0, 0, 0, .1), ;
+}
+
+
