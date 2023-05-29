@@ -5,12 +5,17 @@
 
 .wrapper {
     @extend %wrapper;
+    max-width: 940px;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.navigation__burger {
+    display: none;
 }
 
 .logo {
@@ -38,4 +43,29 @@
         }
     }
     
+}
+
+@include table-768px  {
+    .header__navigation {
+        margin: 0 40px;
+    }
+
+    .vertical-img {
+        width: 162px;
+        height: 344px;
+    }
+}
+
+@include mobile-375px  {
+    .nav {
+        display: none;
+    }
+
+    .navigation__burger {
+        display: block;
+    }
+
+    .logo {
+        @include font (24px, 19.69px, 700);
+    }
 }

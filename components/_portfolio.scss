@@ -1,0 +1,55 @@
+.portfolio {
+    background: $background-color1;
+    border-bottom: 6px solid $color-border;
+}
+
+.portfolio__content-buttons {
+    margin-bottom: 18px;
+}
+
+.portfolio__title {
+    @include font (40px, 30px, 900);
+    color: $color-title;
+    padding: 60px 0 14px;
+    margin: 0;
+}
+
+.portfolio__text {
+    @include font (30px, 18px, 300);
+    color: $color-text;
+}
+
+.content-buttons__btn {
+    @include font (12px, 12px, 400);
+    color: $color-text;
+    background: $background-color1;
+    border: 2px solid $color-text;
+    border-radius: 5px;
+    padding: 3px 5px;
+    margin-left: 10px;
+    &:hover {
+        cursor: pointer;
+        border: 2px solid $color-button;
+        color: $color-button;
+        transition: .4s;
+    }
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.content-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-images__img {
+    margin-bottom: 20px;
+}
+
+@include table-768px  {
+    .portfolio__text {
+        width: 652px;
+    }
+}
